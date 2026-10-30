@@ -3,13 +3,13 @@ RewriteEngine On
 # Group 25
 # Original dataset
 RewriteCond %{HTTP_ACCEPT} text/html
-RewriteRule ^data/originalcsv$ https://github.com/SuzanneRamondt/SmokingHealth/tree/main/main/data/original [R=303,L]
+RewriteRule ^data/originalcsv$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/data/original/health_dataset.csv [R=303,L]
 
 RewriteRule ^data/originalcsv$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/data/original/health_dataset.csv [R=303,L]
 
 # Fairified dataset
 RewriteCond %{HTTP_ACCEPT} text/html
-RewriteRule ^data/rdf$ https://github.com/SuzanneRamondt/SmokingHealth/tree/main/main/data/rdf [R=303,L]
+RewriteRule ^data/rdf$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/data/rdf/smoking-dataset.ttl [R=303,L]
 
 RewriteRule ^data/rdf$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/data/rdf/smoking-dataset.ttl [R=303,L]
 
@@ -35,7 +35,7 @@ RewriteRule ^metadata/schema/rdf/?$ https://raw.githubusercontent.com/SuzanneRam
 
 # Ontology
 RewriteCond %{HTTP_ACCEPT} text/html
-RewriteRule ^ont$ https://github.com/SuzanneRamondt/SmokingHealth/tree/main/main/ontology [R=303,L]
+RewriteRule ^ont$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/ontology/project_smoking_ontology.ttl [R=303,L]
 
 RewriteRule ^ont$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/ontology/project_smoking_ontology.ttl [R=303,L]
 
