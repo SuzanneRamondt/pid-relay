@@ -1,0 +1,84 @@
+
+# Each test is one request to the identifier and the redirect you expect.
+tests:
+# Orgiginal dataset - CSV
+  - path: data/originalcsv
+    status: 303
+    location: https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/data/original/health_dataset.csv
+
+  - path: data/originalcsv
+    accept: text/html,application/xhtml+xml
+    status: 303
+    location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/data/original/health_dataset.csv
+
+# FAIRified dataset - RDF/Turtle
+
+  - pid: https://w3id.org/FAIR-course-UT/2026/group25/data/rdf
+    accept: text/turtle
+    status: 303
+    location: https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/data/rdf/smoking-dataset.ttl
+
+  - path: data/rdf
+    accept: text/html,application/xhtml+xml
+    status: 303
+    location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/data/rdf/smoking-dataset.ttl
+
+
+# Metadata schemas
+  # Metadata CSV (original)
+  - path: metadata/schema/csv
+    accept: text/html
+    status: 303
+    location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/schema/smoking-distribution-metadata-schema.ttl
+
+  - path: metadata/schema/csv
+    accept: text/turtle
+    status: 303
+    location: https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/schema/smoking-distribution-metadata-schema.ttl
+
+  # Metadata schema
+  - path: metadata/schema/schema
+    accept: text/html
+    status: 303
+    location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/schema/smoking-metadata-schema.ttl
+
+  - path: metadata/schema/schema
+    accept: text/turtle
+    status: 303
+    location: https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/schema/smoking-metadata-schema.ttl
+
+  # Metadata RDF
+  - path: metadata/schema/rdf
+    accept: text/html
+    status: 303
+    location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/schema/smoking-rdf-distribution-schema.ttl
+
+  - path: metadata/schema/rdf
+    accept: text/turtle
+    status: 303
+    location: https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/schema/smoking-rdf-distribution-schema.ttl
+# Ontology
+
+  - path: ont
+    accept: text/turtle
+    status: 303
+    location: https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/ontology/project_smoking_ontology.ttl
+
+  - path: ont
+    accept: text/html,application/xhtml+xml
+    status: 303
+    location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/ontology/project_smoking_ontology.ttl
+
+
+  # Namespace root
+
+  - path: ""
+    note: project namespace redirects to the GitHub repository
+    status: 302
+    location: https://github.com/SuzanneRamondt/SmokingHealth
+
+  # Invalid identifier
+
+  - path: data/Not_Valid
+    note: identifiers outside the defined patterns are not redirected
+    status: 404
