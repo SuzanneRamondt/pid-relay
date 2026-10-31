@@ -1,0 +1,68 @@
+tests:
+  - path: ont
+    accept: text/turtle
+    status: 303
+    location: https://gitlab.utwente.nl/s2987716/fair-project/-/raw/main/ontology/shelter_dogs_ont.ttl
+  - path: ont
+    accept: text/html
+    status: 303
+    location: https://gitlab.utwente.nl/s2987716/fair-project/-/blob/main/ontology/shelter_dogs_ont.ttl
+
+  - path: data
+    accept: text/turtle
+    status: 303
+    location: https://gitlab.utwente.nl/s2987716/fair-project/-/raw/main/data/shelter_dogs_fair.ttl
+  - path: data
+    accept: text/html
+    status: 303
+    location: https://gitlab.utwente.nl/s2987716/fair-project/-/blob/main/data/shelter_dogs_fair.ttl
+
+  - path: data/original
+    accept: text/turtle
+    status: 303
+    location: https://gitlab.utwente.nl/s2987716/fair-project/-/raw/main/data/shelter_dogs_original.csv
+  - path: data/original
+    accept: text/html
+    status: 303
+    location: https://gitlab.utwente.nl/s2987716/fair-project/-/blob/main/data/shelter_dogs_original.csv
+
+  - path: metadata/schema
+    accept: text/turtle
+    status: 303
+    location: https://gitlab.utwente.nl/s2987716/fair-project/-/raw/main/metadata/schema.ttl
+  - path: metadata/schema
+    accept: text/html
+    status: 303
+    location: https://gitlab.utwente.nl/s2987716/fair-project/-/blob/main/metadata/schema.ttl
+
+  - path: metadata/dataset
+    accept: text/turtle
+    status: 303
+    location: https://gitlab.utwente.nl/s2987716/fair-project/-/raw/main/metadata/dataset.ttl
+  - path: metadata/dataset
+    accept: text/html
+    status: 303
+    location: https://gitlab.utwente.nl/s2987716/fair-project/-/blob/main/metadata/dataset.ttl
+
+  - path: metadata/distribution/fair
+    accept: text/turtle
+    status: 303
+    location: https://gitlab.utwente.nl/s2987716/fair-project/-/raw/main/metadata/distribution_fair.ttl
+  - path: metadata/distribution/fair
+    accept: text/html
+    status: 303
+    location: https://gitlab.utwente.nl/s2987716/fair-project/-/blob/main/metadata/distribution_fair.ttl
+
+  - path: metadata/distribution/original
+    accept: text/turtle
+    status: 303
+    location: https://gitlab.utwente.nl/s2987716/fair-project/-/raw/main/metadata/distribution_original.ttl
+  - path: metadata/distribution/original
+    accept: text/html
+    status: 303
+    location: https://gitlab.utwente.nl/s2987716/fair-project/-/blob/main/metadata/distribution_original.ttl
+
+  - path: ""
+    accept: text/html
+    status: 302
+    location: https://gitlab.utwente.nl/s2987716/fair-project
