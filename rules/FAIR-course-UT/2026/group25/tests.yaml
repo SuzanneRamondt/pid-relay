@@ -11,6 +11,28 @@ tests:
     status: 303
     location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/data/original/health_dataset.csv
 
+  # Metadata Schema CSV (original)
+  - path: metadata/schema/csv
+    accept: text/html
+    status: 303
+    location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/schema/smoking-distribution-metadata-schema.ttl
+
+  - path: metadata/schema/csv
+    accept: text/turtle
+    status: 303
+    location: https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/schema/smoking-distribution-metadata-schema.ttl
+
+  # Metadata Records CSV (original)
+  - path: metadata/records/csv
+    accept: text/html
+    status: 303
+    location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/records/smoking-dataset-csv-distribution-record.ttl
+
+  - path: metadata/records/csv
+    accept: text/turtle
+    status: 303
+    location: https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/records/smoking-dataset-csv-distribution-record.ttl
+
 # FAIRified dataset - RDF/Turtle
 
   - pid: https://w3id.org/FAIR-course-UT/2026/group25/data/rdf
@@ -24,30 +46,7 @@ tests:
     location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/data/rdf/smoking-dataset.ttl
 
 
-# Metadata schemas
-  # Metadata CSV (original)
-  - path: metadata/schema/csv
-    accept: text/html
-    status: 303
-    location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/schema/smoking-distribution-metadata-schema.ttl
-
-  - path: metadata/schema/csv
-    accept: text/turtle
-    status: 303
-    location: https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/schema/smoking-distribution-metadata-schema.ttl
-
-  # Metadata schema
-  - path: metadata/schema/schema
-    accept: text/html
-    status: 303
-    location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/schema/smoking-metadata-schema.ttl
-
-  - path: metadata/schema/schema
-    accept: text/turtle
-    status: 303
-    location: https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/schema/smoking-metadata-schema.ttl
-
-  # Metadata RDF
+  # Metadata Schema RDF
   - path: metadata/schema/rdf
     accept: text/html
     status: 303
@@ -57,6 +56,43 @@ tests:
     accept: text/turtle
     status: 303
     location: https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/schema/smoking-rdf-distribution-schema.ttl
+
+  # Metadata RecordsRDF
+  - path: metadata/records/rdf
+    accept: text/html
+    status: 303
+    location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/records/smoking-dataset-rdf-distribution-record.ttl
+
+  - path: metadata/records/rdf
+    accept: text/turtle
+    status: 303
+    location: https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/records/smoking-rdf-distribution-record.ttl
+
+
+# Main Metadata
+  # Metadata schema
+  - path: metadata/schema/main
+    accept: text/html
+    status: 303
+    location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/schema/smoking-metadata-schema.ttl
+
+  - path: metadata/schema/main
+    accept: text/turtle
+    status: 303
+    location: https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/schema/smoking-metadata-schema.ttl
+
+  # Metadata record
+  - path: metadata/records/main
+    accept: text/html
+    status: 303
+    location: https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/records/smoking-metadata-record.ttl
+
+  - path: metadata/records/main
+    accept: text/turtle
+    status: 303
+    location: https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/records/smoking-metadata-record.ttl
+
+
 # Ontology
 
   - path: ont

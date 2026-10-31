@@ -7,31 +7,51 @@ RewriteRule ^data/originalcsv$ https://github.com/SuzanneRamondt/SmokingHealth/b
 
 RewriteRule ^data/originalcsv$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/data/original/health_dataset.csv [R=303,L]
 
-# Fairified dataset
-RewriteCond %{HTTP_ACCEPT} text/html
-RewriteRule ^data/rdf$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/data/rdf/smoking-dataset.ttl [R=303,L]
-
-RewriteRule ^data/rdf$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/data/rdf/smoking-dataset.ttl [R=303,L]
-
-# Metadata CSV (original)
+# Metadata Shema CSV (original)
 RewriteCond %{HTTP_ACCEPT} text/html
 RewriteRule ^metadata/schema/csv/?$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/schema/smoking-distribution-metadata-schema.ttl [R=303,L]
 
 RewriteRule ^metadata/schema/csv/?$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/schema/smoking-distribution-metadata-schema.ttl [R=303,L]
 
 
-# Metadata schema
+# Metadata Record CSV (original)
 RewriteCond %{HTTP_ACCEPT} text/html
-RewriteRule ^metadata/schema/schema/?$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/schema/smoking-metadata-schema.ttl [R=303,L]
+RewriteRule ^metadata/record/csv/?$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/records/smoking-dataset-csv-distribution-record.ttl [R=303,L]
 
-RewriteRule ^metadata/schema/schema/?$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/schema/smoking-metadata-schema.ttl [R=303,L]
+RewriteRule ^metadata/record/csv/?$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/records/smoking-dataset-csv-distribution-record.ttl [R=303,L]
 
+# Fairified dataset
+RewriteCond %{HTTP_ACCEPT} text/html
+RewriteRule ^data/rdf$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/data/rdf/smoking-dataset.ttl [R=303,L]
 
-# Metadata RDF
+RewriteRule ^data/rdf$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/data/rdf/smoking-dataset.ttl [R=303,L]
+
+# Metadata Schema RDF
 RewriteCond %{HTTP_ACCEPT} text/html
 RewriteRule ^metadata/schema/rdf/?$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/schema/smoking-rdf-distribution-schema.ttl [R=303,L]
 
 RewriteRule ^metadata/schema/rdf/?$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/schema/smoking-rdf-distribution-schema.ttl [R=303,L]
+
+# Metadata Records RDF
+RewriteCond %{HTTP_ACCEPT} text/html
+RewriteRule ^metadata/record/rdf/?$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/records/smoking-dataset-rdf-distribution-record.ttl [R=303,L]
+
+RewriteRule ^metadata/record/rdf/?$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/records/smoking-dataset-rdf-distribution-record.ttl [R=303,L]
+
+
+# Metadata main schema
+RewriteCond %{HTTP_ACCEPT} text/html
+RewriteRule ^metadata/schema/main$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/schema/smoking-metadata-schema.ttl [R=303,L]
+
+RewriteRule ^metadata/schema/main$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/schema/smoking-metadata-schema.ttl [R=303,L]
+
+# Metadata main record
+RewriteCond %{HTTP_ACCEPT} text/html
+RewriteRule ^metadata/records/main$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/records/smoking-dataset-record.ttl [R=303,L]
+
+RewriteRule ^metadata/records/main$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/records/smoking-dataset-record.ttl [R=303,L]
+
+
 
 # Ontology
 RewriteCond %{HTTP_ACCEPT} text/html
