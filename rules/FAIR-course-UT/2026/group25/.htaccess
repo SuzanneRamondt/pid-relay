@@ -16,9 +16,9 @@ RewriteRule ^metadata/schema/csv/?$ https://raw.githubusercontent.com/SuzanneRam
 
 # Metadata Record CSV (original)
 RewriteCond %{HTTP_ACCEPT} text/html
-RewriteRule ^metadata/record/csv/?$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/records/smoking-dataset-csv-distribution-record.ttl [R=303,L]
+RewriteRule ^metadata/records/csv/?$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/records/smoking-dataset-csv-distribution-record.ttl [R=303,L]
 
-RewriteRule ^metadata/record/csv/?$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/records/smoking-dataset-csv-distribution-record.ttl [R=303,L]
+RewriteRule ^metadata/records/csv/?$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/records/smoking-dataset-csv-distribution-record.ttl [R=303,L]
 
 # Fairified dataset
 RewriteCond %{HTTP_ACCEPT} text/html
@@ -34,9 +34,9 @@ RewriteRule ^metadata/schema/rdf/?$ https://raw.githubusercontent.com/SuzanneRam
 
 # Metadata Records RDF
 RewriteCond %{HTTP_ACCEPT} text/html
-RewriteRule ^metadata/record/rdf/?$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/records/smoking-dataset-rdf-distribution-record.ttl [R=303,L]
+RewriteRule ^metadata/records/rdf/?$ https://github.com/SuzanneRamondt/SmokingHealth/blob/main/main/metadata/records/smoking-dataset-rdf-distribution-record.ttl [R=303,L]
 
-RewriteRule ^metadata/record/rdf/?$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/records/smoking-dataset-rdf-distribution-record.ttl [R=303,L]
+RewriteRule ^metadata/records/rdf/?$ https://raw.githubusercontent.com/SuzanneRamondt/SmokingHealth/main/main/metadata/records/smoking-dataset-rdf-distribution-record.ttl [R=303,L]
 
 
 # Metadata main schema
